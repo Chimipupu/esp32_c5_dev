@@ -9,11 +9,16 @@
 
 #include "pcb_define.h"
 #include "app_rtos.h"
+#include "app_memory.h"
 
 void setup()
 {
     // UART
     Serial.begin(UART_BAUD);
+
+    // PSRAM初期化
+    app_mem_psram_init();
+    app_mem_info();
 
     // LED初期化
     pinMode(OB_LED_PIN, OUTPUT);

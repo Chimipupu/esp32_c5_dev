@@ -3,7 +3,7 @@
  * @author Chimipupu(https://github.com/Chimipupu)
  * @brief WiFiアプリ
  * @version 0.1
- * @date 2026-05-23
+ * @date 2026-05-18
  * @copyright Copyright (c) 2026 Chimipupu All Rights Reserved.
  */
 
@@ -30,5 +30,7 @@
 void app_wifi_scan(void);
 void app_wifi_init(const char *p_ssid, const char *p_password);
 void app_wifi_main(void);
+void app_wifi_ntp_sync(void);
+void app_wifi_disconnet(void);
 
 #endif // APP_WIFI_H
